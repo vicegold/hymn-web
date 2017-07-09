@@ -1,0 +1,27 @@
+.hymn-intro {
+  @include gradient;
+  height: 90vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+  img {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 215px;
+  }
+
+  p {
+    text-align: center;
+    margin-top: 280px;
+    text-transform: uppercase;
+    color: $color-white;
+    font-family: BrandonText-Bold;
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+
+}

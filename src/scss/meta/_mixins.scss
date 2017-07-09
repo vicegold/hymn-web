@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// Define your global mixins in here!
+// -----------------------------------------------------------------------------
+@mixin appearance-none() {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+@mixin font-smoothing($on: true) {
+    @if $on {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    } @else {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}
+
+@mixin group {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+@mixin gradient {
+    /* Rectangle 17: */
+    background-image: linear-gradient(-135deg, #478BE4 0%, #4759E4 37%, #B320E2 100%);
+}

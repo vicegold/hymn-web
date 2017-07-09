@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// Generic styles.
+// -----------------------------------------------------------------------------
+:root {
+    box-sizing: border-box;
+    transition-duration: 200ms;
+    transition-property: none;
+}
+
+*,
+*::before,
+*::after {
+    border-color: inherit;
+    box-sizing: inherit;
+    transition-duration: inherit;
+    transition-property: inherit;
+}

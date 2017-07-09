@@ -1,0 +1,38 @@
+.hymn-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  margin-top: 40px;
+  width: 100%;
+
+  .hymn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+
+}
+
+.hymn-logo {
+  width: 50px;
+  height: auto;
+}
+
+.hymn-brand {
+  margin-left: 20px;
+  margin-top: 3px;
+  color: #fff;
+}
+
+.hymn-menu {
+  margin-left: auto;
+  li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: BrandonText-Bold;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    margin-left: 30px;
+  }
+}

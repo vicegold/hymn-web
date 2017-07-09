@@ -1,0 +1,123 @@
+// -----------------------------------------------------------------------------
+// Common font weights.
+// http://www.w3.org/TR/css3-fonts/#font-weight-prop
+//
+// 100 - Thin
+// 200 - Extra Light (Ultra Light)
+// 300 - Light
+// 400 - Normal
+// 500 - Medium
+// 600 - Semi Bold (Demi Bold)
+// 700 - Bold
+// 800 - Extra Bold (Ultra Bold)
+// 900 - Black (Heavy)
+// -----------------------------------------------------------------------------
+
+/**
+ * @license
+ * MyFonts Webfont Build ID 3418248, 2017-07-07T15:49:39-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: BrandonTextWeb-Bold by HVD Fonts
+ * URL: https://www.myfonts.com/fonts/hvdfonts/brandon-text/bold/
+ *
+ * Webfont: BrandonTextWeb-Light by HVD Fonts
+ * URL: https://www.myfonts.com/fonts/hvdfonts/brandon-text/light/
+ *
+ * Webfont: BrandonTextWeb-Regular by HVD Fonts
+ * URL: https://www.myfonts.com/fonts/hvdfonts/brandon-text/regular/
+ *
+ *
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3418248
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright (c) 2015 by Hannes von Doehren. All rights reserved.
+ *
+ * © 2017 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/342888");
+
+
+@font-face {font-family: 'BrandonTextWeb-Bold';src: url('/assets/fonts/342888_0_0.eot');src: url('/assets/fonts/342888_0_0.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/342888_0_0.woff2') format('woff2'),url('/assets/fonts/342888_0_0.woff') format('woff'),url('/assets/fonts/342888_0_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'BrandonTextWeb-Light';src: url('/assets/fonts/342888_1_0.eot');src: url('/assets/fonts/342888_1_0.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/342888_1_0.woff2') format('woff2'),url('/assets/fonts/342888_1_0.woff') format('woff'),url('/assets/fonts/342888_1_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'BrandonTextWeb-Regular';src: url('/assets/fonts/342888_2_0.eot');src: url('/assets/fonts/342888_2_0.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/342888_2_0.woff2') format('woff2'),url('/assets/fonts/342888_2_0.woff') format('woff'),url('/assets/fonts/342888_2_0.ttf') format('truetype');}
+
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    line-height: _("font", "text-line-height");
+    text-rendering: _("font", "text-rendering");
+    background-color: $color-gray--dark;
+    color: $color-lilac;
+    font-family: BrandonTextWeb-Regular;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    color: $color-lilac;
+    font-family: BrandonTextWeb-Bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 3px;
+}
+
+h1, .h1 {
+    font-size: 2rem;
+    line-height: _("grid", "vertical-base") * 2;
+}
+
+h2, .h2 {
+    font-size: 1.5rem;
+    line-height: _("grid", "vertical-base") * 1.5;
+    color: $color-purple;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: BrandonText-Bold;
+    text-align: center;
+}
+
+h3, .h3 {
+    font-size: 1.25rem;
+}
+
+h4, .h4 {
+    font-size: 1.125rem;
+}
+
+h5, .h5 {
+    font-size: 1rem;
+}
+
+p, .paragraph {
+    margin-top: _("grid", "vertical-base");
+    margin-bottom: _("grid", "vertical-base");
+    color: #5A6D8E;
+}
+
+ul,
+ol {
+    margin-top: _("grid", "vertical-base");
+    margin-bottom: _("grid", "vertical-base");
+}
