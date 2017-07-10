@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Modern Web Boilerplate</title>
+    <title>HYMN.fm</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/scripts/smoothscroll.js" charset="utf-8"></script>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
     <!--
     /**
@@ -45,15 +46,18 @@
 
         <div class="hymn-header">
           <div class="hymn-wrapper">
-            <img class="hymn-logo" src="/assets/images/hymn_logo.png" alt="HYMN">
+            <img class="hymn-logo" src="assets/images/hymn_logo.png" alt="HYMN">
             <h1 class="hymn-brand">HYMN</h1>
             <nav class="hymn-menu">
               <ul>
-                <li>What it is</li>
-                <li>Services</li>
-                <li>Multiroom</li>
-                <li>Share your music</li>
-                <li>Import</li>
+                <li><a data-scroll href="#music">Deine Musik</a></li>
+                <li><a data-scroll href="#speakers">Deine Lautsprecher</a></li>
+                <li><a data-scroll href="#cloud">Cloud</a></li>
+                <li><a data-scroll href="#multiroom">Multiroom</a></li>
+                <li><a data-scroll href="#mix">Mix</a></li>
+                <li><a data-scroll href="#devices">Devices</a></li>
+                <li><a data-scroll href="#screenshots">Screenshots</a></li>
+                <li><a data-scroll href="#footer">Registrieren</a></li>
               </ul>
             </nav>
           </div>
@@ -62,19 +66,124 @@
         <section class="hymn-intro">
           <div class="hymn-wrapper">
             <p>Every Song. Everywhere.</p>
-            <img src="/assets/images/screen_main.png" alt="">
+            <div class="hymn-platforms">
+              @sprite:assets/images/sprites/platforms.svg#apple,hymn-platform
+              @sprite:assets/images/sprites/platforms.svg#android-black,hymn-platform
+              @sprite:assets/images/sprites/platforms.svg#ubuntu,hymn-platform
+              @sprite:assets/images/sprites/platforms.svg#playstation,hymn-platform
+              @sprite:assets/images/sprites/platforms.svg#airplay,hymn-platform
+              @sprite:assets/images/sprites/platforms.svg#chromecast,hymn-platform
+            </div>
+            <img src="assets/images/screen_main.png" alt="">
           </div>
         </section>
 
         <section class="hymn-whatshymn">
           <div class="hymn-wrapper">
-            <h2>What's HYMN?</h2>
-            <p>HYMN ist ein Musikplayer der es dir erlaubt Musik aus jeglichen Quellen wie Streamingdiensten oder deiner privaten Musiksammlung abzuspielen und in einer einzigen Anwendung zu verwalten.</p>
+            <img class="hymn-whatshymn__mockup" src="assets/images/mockups.png" alt="HYMN on your Devices">
+            <h2 id="music">Deine Musik</h2>
+            <p>HYMN ist ein Musikplayer der es dir erlaubt Musik aus jeglichen Quellen wie Streamingdiensten oder deiner privaten Musiksammlung abzuspielen und in einer einzigen Anwendung zu verwalten.<br>Das ermöglicht es dir z.B. Spotify, YouTube und deine lokale Musiksammlung miteinander zu verknüpfen, um so all deine Lieblingsmusik in einer Anwendung nutzen zu können!</p>
             <p>Jedes Abspielgerät kann als Lautsprecher fungieren. Somit kannst du dein eigenes Multiroomsystem aufbauen und sogar Lautsprecher mit Chromecast Audio oder Apple AirPlay Unterstützung einbinden!</p>
-            <img src="/assets/images/services.png" alt="services">
-            <p>Sobald du in HYMN einen Song abspielen möchtest sucht HYMN automatisch die beste verfügbare Version aus. Ist der Song weder bei einem deiner aktivierten Streamingdienste noch in deiner lokalen Musiksammlung verfügbar greift HYMN auf YouTube zurück um den Song abzuspielen.</p>
+            <img src="assets/images/services.png" class="hymn-services" alt="services">
+            <p>Sobald du in HYMN einen Song abspielen möchtest sucht HYMN automatisch nach der qualitativ hochwertigsten versionen in deinen aktivierten Streamingdiensten (z.B. Spotify oder SoundCloud). Ist der Song weder bei einem deiner aktivierten Streamingdienste noch in deiner lokalen Musiksammlung verfügbar greift HYMN auf YouTube zurück um den Song abzuspielen.</p>
+
+            <p>Möchtest du auch von unterwegs auf deine Musiksammlung zugreifen? Dann installiere dir die HYMN Server App auf einer unserer unterstützten Plattformen oder Abonnieren die HYMN Cloud!</p>
+            <a data-scroll class="hymn-cloud__price" href="#cloud">HYMN Cloud</a>
+            <h2 id="speakers" style="margin-top: 100px;">Deine Lautsprecher</h2>
+            <p>Nutze alle Geräte auf denen HYMN verfügbar ist als Lautsprecher, füge AirPlay und Chromecast Geräte hinzu und starte die synchrone Wiedergabe über alle Geräte hinweg!</p>
+            <img src="assets/images/multiroom.svg" class="hymn-multiroom__vis" alt="Multiroom">
           </div>
         </section>
+
+        <section id="cloud" class="hymn-cloud">
+          <div class="hymn-wrapper">
+
+            <img src="assets/images/cloud.png" class="hymn-cloud__screen" alt="Cloud">
+            <div class="hymn-cloud__content">
+              @sprite:assets/images/sprites/icons.svg#cloudnew,hymn-cloud__logo
+              <h2>HYMN Cloud</h2>
+              <p>Um deine eigene Musik von überall hören zu können kannst du sie mit HYMN automatisch in die Cloud laden. So kannst du auch unterwegs deine Lieblingsmusik hören.</p>
+              <p>Mit der HYMN Cloud kannst du außerdem alle deine Playlists und Lautsprechereinstellungen synchronisieren, so dass du HYMN nur einmal einrichten musst, es aber auf jedem Gerät wie gewohnt nutzen kannst.</p>
+              <a data-scroll href="#footer" class="hymn-cloud__price">Preise</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="multiroom" class="hymn-multiroom">
+          <div class="hymn-wrapper">
+
+            <div class="hymn-multiroom__content">
+              <div class="hymn-multiroom__left">
+                <h2>Multiroom mit deinen Freunden</h2>
+                <p>Nutze alle im Netzwerk verfügbaren HYMN Player als Abspielgerät. Oder schließe AirPlay und Chromecast Lautsprecher zusammen um in mehreren Räumen die gleiche Musik zu hören. Ziehe einfach deine Songs auf den jeweiligen gewünschten Player!</p>
+                <p>Wenn deine Freunde zu besuch sind können auch sie die Musik steuern. Natürlich wird deine Wiedergabe nicht durch Andere unterbrochen sobald du einen Lautsprecher für dich beansprucht hast.</p>
+
+                <img src="assets/images/request.png" class="hymn-request" alt="Anfrage">
+              </div>
+              <div class="hymn-multiroom__right">
+                <img src="assets/images/drag_song.png" class="hymn-drag-song" alt="drag">
+                <img src="assets/images/player_main.png" class="hymn-player-main" alt="Main HYMN Player">
+                <img src="assets/images/player_small.png" class="hymn-player-small" alt="Small HYMN Player">
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section id="mix" class="hymn-generated">
+          <div class="hymn-wrapper">
+
+            <img src="assets/images/generated_content.png" class="hymn-generated__screen" alt="HYMN Mix">
+            <div class="hymn-generated__content">
+              <h2>HYMN Mix</h2>
+              <p>Du hörst in deinem Wohnzimmer oft andere Musik als in der Abends in der Küche? HYMN analysiert deine Hörgewohnheiten und erstellt dir zur Tageszeit passende Raumplaylists um dir unbekannte Musik näherzubringen die zu deiner aktuellen Stimmung passen.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="devices" class="hymn-devices">
+          <div class="hymn-wrapper">
+
+            <div class="hymn-devices__content">
+              <h2>Auf allen deinen Geräten nutzbar</h2>
+              <p>Nutze HYMN nicht nur auf deinem Computer, sondern kontrolliere deine Musik auch mit deinem Smartphone, Tablet oder deiner Spielekonsole.</p>
+              <img src="assets/images/iphone.png" class="hymn-devices__iphone" alt="HYMN for iPhone">
+              <img src="assets/images/ps4.png" class="hymn-devices__ps4" alt="HYMN for PlayStation 4">
+            </div>
+          </div>
+        </section>
+        <div id="screenshots" class="hymn-slider__container">
+          <div class="hymn-wrapper">
+            <h2>Screenshots</h2>
+            <div class="hymn-slider">
+              <div><img src="assets/images/slider/2. Onboarding - Streamingdienste.png" alt=""></div>
+              <div><img src="assets/images/slider/3. Onboarding - Dienste gescrollt.png" alt=""></div>
+              <div><img src="assets/images/slider/4. Onboarding Musikbibliothek einrichten - Settings.png" alt=""></div>
+              <div><img src="assets/images/slider/5. Onboarding Musikbibliothek einrichten - Ordner.png" alt=""></div>
+              <div><img src="assets/images/slider/6. Onboarding - Lautsprecher Setup.png" alt=""></div>
+              <div><img src="assets/images/slider/7. Onboarding - Lautsprecher Setup Drag & Drop.png" alt=""></div>
+              <div><img src="assets/images/slider/8. Home Ansicht.png" alt=""></div>
+              <div><img src="assets/images/slider/9. Playlist ink. Mousehover.png" alt=""></div>
+              <div><img src="assets/images/slider/10. Drag&Drop Song zu Player.png" alt=""></div>
+              <div><img src="assets/images/slider/11. Anfrage zur Zonenübernahme.png" alt=""></div>
+              <div><img src="assets/images/slider/12. Temporär Lautsprecher zu Zone hinzufügen.png" alt=""></div>
+              <div><img src="assets/images/slider/13. Zusammengeschaltete Zonen.png" alt=""></div>
+              <div><img src="assets/images/slider/14. Modus ohne Multiroom.png" alt=""></div>
+              <div><img src="assets/images/slider/15. Suche, keine Ergebnisse, Lieder kaufbar.png" alt=""></div>
+            </div>
+
+          </div>
+        </div>
+
+      <footer class="hymn-footer" id="footer">
+        <div class="hymn-wrapper">
+          <p>HYMN ist ein im Rahmen einer Bachelorthesis an der FH Potsdam entstandenes Gestaltungsprojekt. Aktuell bestehen keine Pläne HYMN als nutzbare Anwendung anzubieten.</p>
+          <a class="hymn-footer__thesis" href="https://laurids.io/hymn/AllTogetherNow_Laurids_Duellmann_Thesis.pdf">Download Thesis PDF</a>
+          <a class="hymn-footer__screens" href="https://laurids.io/hymn/screens.zip">Download Screenshots</a>
+          <p>Schreibe eine Email wenn du weitere Fragen zum Projekt HYMN hast.</p>
+          <a class="hymn-footer__contact" href="mailto:hello@laurids.io">Kontakt</a>
+        </div>
+      </footer>
 
       </div>
 
@@ -88,5 +197,7 @@
             document.body.appendChild(element);
         }, false);
     </script>
+
+
   </body>
 </html>

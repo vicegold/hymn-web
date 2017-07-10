@@ -2,8 +2,9 @@
   background: $color-white;
   margin-top: calc(88vh - 1px);
   position: relative;
-  height: 300px;
-  padding-bottom: 1000px;
+  height: auto;
+  padding-bottom: 300px;
+  margin-bottom: 300px;
 
   &::before {
     background: $color-white;
@@ -29,10 +30,30 @@
     margin-right: auto;
   }
 
-  img {
+  .hymn-services {
     max-width: 100%;
     height: auto;
     margin-top: 100px;
     margin-bottom: 100px;
   }
+
+  .hymn-cloud__price {
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.hymn-whatshymn__mockup {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  transform: translateY(-120px);
+}
+
+.hymn-multiroom__vis {
+  max-width: 300px;
+  width: 90%;
+  display: block;
+  margin: 100px auto 0 auto;
 }

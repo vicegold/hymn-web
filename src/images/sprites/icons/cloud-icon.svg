@@ -1,0 +1,27 @@
+
+<svg width="59px" height="56px" viewBox="0 0 59 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-1.7%" y="-3.1%" width="106.3%" height="106.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.7 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="13.-Zusammengeschaltete-Zonen" transform="translate(-38.000000, -538.000000)" stroke="#5A6D8E" stroke-width="1.5">
+            <g id="Inhalt" filter="url(#filter-1)" transform="translate(30.000000, 41.000000)">
+                <g id="MENU">
+                    <g id="Cloud" transform="translate(28.000000, 516.000000)">
+                        <path d="M15.4898597,5.85197119 C15.4286707,5.85197119 15.3687137,5.85813116 15.308346,5.86100581 C15.2853487,2.6204511 12.6529884,0 9.40668436,0 C6.47453879,0 4.04874273,2.13997346 3.58879833,4.942349 C1.56997094,5.16821456 0,6.8786328 0,8.95741724 C0,11.1902009 1.80979909,13 4.04258276,13 L15.4898597,13 C17.4639247,13 19.0638741,11.4000505 19.0638741,9.4259856 C19.0638741,7.45192065 17.4639247,5.85197119 15.4898597,5.85197119 Z" id="Stroke-3"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

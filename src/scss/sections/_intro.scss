@@ -11,7 +11,7 @@
     width: 70%;
     margin: 0 auto;
     display: block;
-    margin-top: 215px;
+    margin-top: 100px;
   }
 
   p {
@@ -19,9 +19,23 @@
     margin-top: 280px;
     text-transform: uppercase;
     color: $color-white;
-    font-family: BrandonText-Bold;
+    font-family: "BrandonTextWeb-Bold";
     font-size: 3rem;
     letter-spacing: 2px;
   }
 
+}
+
+.hymn-platforms {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.hymn-platform {
+  fill: $color-white;
+  height: 25px;
+  stroke: transparent;
+  width: 25px;
+  opacity: 0.5;
+  margin: 0 10px;
 }

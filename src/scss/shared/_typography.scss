@@ -45,13 +45,13 @@
 @import url("//hello.myfonts.net/count/342888");
 
 
-@font-face {font-family: 'BrandonTextWeb-Bold';src: url('/assets/fonts/342888_0_0.eot');src: url('/assets/fonts/342888_0_0.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/342888_0_0.woff2') format('woff2'),url('/assets/fonts/342888_0_0.woff') format('woff'),url('/assets/fonts/342888_0_0.ttf') format('truetype');}
+@font-face {font-family: 'BrandonTextWeb-Bold';src: url('../fonts/342888_0_0.eot');src: url('../fonts/342888_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/342888_0_0.woff2') format('woff2'),url('../fonts/342888_0_0.woff') format('woff'),url('../fonts/342888_0_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'BrandonTextWeb-Light';src: url('/assets/fonts/342888_1_0.eot');src: url('/assets/fonts/342888_1_0.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/342888_1_0.woff2') format('woff2'),url('/assets/fonts/342888_1_0.woff') format('woff'),url('/assets/fonts/342888_1_0.ttf') format('truetype');}
+@font-face {font-family: 'BrandonTextWeb-Light';src: url('../fonts/342888_1_0.eot');src: url('../fonts/342888_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/342888_1_0.woff2') format('woff2'),url('../fonts/342888_1_0.woff') format('woff'),url('../fonts/342888_1_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'BrandonTextWeb-Regular';src: url('/assets/fonts/342888_2_0.eot');src: url('/assets/fonts/342888_2_0.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/342888_2_0.woff2') format('woff2'),url('/assets/fonts/342888_2_0.woff') format('woff'),url('/assets/fonts/342888_2_0.ttf') format('truetype');}
+@font-face {font-family: 'BrandonTextWeb-Regular';src: url('../fonts/342888_2_0.eot');src: url('../fonts/342888_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/342888_2_0.woff2') format('woff2'),url('../fonts/342888_2_0.woff') format('woff'),url('../fonts/342888_2_0.ttf') format('truetype');}
 
 
 :root {
@@ -61,7 +61,7 @@
 body {
     line-height: _("font", "text-line-height");
     text-rendering: _("font", "text-rendering");
-    background-color: $color-gray--dark;
+    background-color: $color-white;
     color: $color-lilac;
     font-family: BrandonTextWeb-Regular;
     font-weight: normal;
@@ -75,7 +75,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
     color: $color-lilac;
-    font-family: BrandonTextWeb-Bold;
+    font-family: "BrandonTextWeb-Bold";
     margin-top: 0;
     margin-bottom: 0;
     font-weight: normal;
@@ -94,7 +94,7 @@ h2, .h2 {
     color: $color-purple;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-family: BrandonText-Bold;
+    font-family: "BrandonTextWeb-Bold";
     text-align: center;
 }
 

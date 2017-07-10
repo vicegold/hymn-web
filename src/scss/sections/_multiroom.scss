@@ -1,0 +1,50 @@
+.hymn-multiroom {
+  margin-top: 50px;
+  min-height: 800px;
+  position: relative;
+}
+.hymn-multiroom__content {
+  position: relative;
+  display: flex;
+  h2 {
+    text-align: left;
+  }
+}
+
+.hymn-multiroom__left {
+  position: relative;
+  width: 50%;
+}
+
+.hymn-multiroom__right {
+  position: relative;
+  width: 50%;
+  margin-top: 100px;
+}
+
+.hymn-drag-song {
+  width: 410px;
+  position: absolute;
+  top: 200px;
+  left: 0px;
+  z-index: 100;
+}
+
+.hymn-player-main {
+  width: 390px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.hymn-player-small {
+  width: 390px;
+  position: absolute;
+  right: 0;
+  top: 400px;
+}
+
+.hymn-request {
+  width: 432px;
+  margin-top: 100px;
+}

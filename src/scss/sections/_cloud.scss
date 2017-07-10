@@ -1,0 +1,68 @@
+.hymn-cloud {
+  position: relative;
+  height: auto;
+  padding-bottom: 0px;
+  margin-top: 200px;
+
+  &::before {
+    background: $color-blue--medium;
+    transform: rotate(7deg) translateX(-10%) translateY(-250px);
+    width: 120%;
+    height: 550px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  * {
+    position: relative;
+    z-index: 100;
+  }
+
+  p {
+    max-width: 600px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.hymn-cloud__screen {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: -375px;
+
+}
+
+.hymn-cloud__content {
+  margin-left: calc(50% + 50px);
+  width: calc(50% - 50px);
+  transform: translateY(-210px);
+
+  h2 {
+    text-align: left;
+    color: $color-lilac;
+  }
+}
+
+.hymn-cloud__logo {
+  fill: $color-lilac;
+  height: 100px;
+  width: 100px;
+  stroke: transparent;
+}
+
+.hymn-cloud__price {
+  @include gradient;
+  color: $color-white;
+  padding: 10px 22px;
+  border-radius: 28px;
+  text-transform: uppercase;
+  font-family: "BrandonTextWeb-Bold";
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+}

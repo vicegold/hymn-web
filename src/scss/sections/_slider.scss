@@ -1,0 +1,33 @@
+.hymn-slider {
+  width: 1200px;
+  img {
+    max-width: 90%;
+    margin-left: 5%;
+  }
+}
+
+.slick-prev {
+  background: none;
+  border: none;
+  color: transparent;
+  background: url(../images/stre-left.svg) no-repeat;
+  outline: 0;
+  cursor: pointer;
+  transform: translateY(310px);
+  position: relative;
+  z-index: 10000;
+}
+
+.slick-next {
+  background: none;
+  border: none;
+  color: transparent;
+  background: url(../images/stre-right.svg) no-repeat;
+  background-position: right;
+  outline: 0;
+  cursor: pointer;
+  transform: translateY(310px);
+  position: absolute;
+  right: 0;
+  top: 0;
+}

@@ -1,0 +1,51 @@
+.hymn-generated {
+  position: relative;
+  height: auto;
+  padding-bottom: 0px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  min-height: 100px;
+  z-index: -1;
+
+  &::before {
+    @include gradient;
+    transform: rotate(-7deg) translateX(-10%) translateY(50px);
+    width: 120%;
+    height: 500px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  * {
+    position: relative;
+    z-index: 100;
+  }
+
+  p {
+    max-width: 600px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: $color-lilac;
+  }
+}
+
+.hymn-generated__content {
+  width: calc(30% - 50px);
+  transform: translateY(-210px);
+
+  h2 {
+    text-align: left;
+    color: $color-lilac;
+  }
+}
+
+.hymn-generated__screen {
+  width: 50%;
+  margin-left: calc(30% + 50px);
+  width: calc(70% - 50px);
+  transform: translateY(200px);
+}

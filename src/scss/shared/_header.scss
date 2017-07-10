@@ -30,9 +30,21 @@
   li {
     display: inline-block;
     text-transform: uppercase;
-    font-family: BrandonText-Bold;
+    font-family: "BrandonTextWeb-Bold";
     font-size: 0.7rem;
     letter-spacing: 1px;
     margin-left: 30px;
+    &:last-child {
+      a {
+        background: $color-white;
+        color: #4773e4;
+        padding: 11px 14px 8px;
+        border-radius: 28px;
+      }
+    }
+    a {
+      color: $color-lilac;
+      text-decoration: none;
+    }
   }
 }

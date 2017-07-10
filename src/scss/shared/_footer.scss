@@ -1,0 +1,61 @@
+.hymn-footer {
+  position: relative;
+  height: auto;
+  padding-bottom: 170px;
+  margin-top: 500px;
+  background: $color-lilac;
+  text-align: center;
+
+  &::before {
+    background: $color-lilac;
+    transform: rotate(-7deg) translateX(-10%) translateY(-250px);
+    width: 120%;
+    height: 600px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  * {
+    position: relative;
+    z-index: 100;
+  }
+
+  p {
+    max-width: 600px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  a {
+    @include gradient;
+    color: $color-white;
+    padding: 10px 22px 6px;
+    border-radius: 28px;
+    text-transform: uppercase;
+    font-family: "BrandonTextWeb-Bold";
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+}
+
+.hymn-footer__thesis {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.hymn-footer__screens {
+  margin-bottom: 100px;
+  display: inline-block;
+}
+
+a.hymn-footer__contact {
+
+  padding: 16px 22px 13px
+
+}
